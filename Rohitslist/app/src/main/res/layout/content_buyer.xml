@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.team15.rohitslist.buyerActivity"
+    tools:showIn="@layout/app_bar_buyer">
+
+    <!--TODO: Make variable # of Vendors and Menu Items-->
+    <!--Place and Vendor are the same thing-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/vendor1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:onClick="openVendor">
+                <TextView
+                    android:tag="@string/vendor_tag"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place1"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i1"
+                    android:id="@+id/v1item1"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i2"
+                    android:id="@+id/v1item2"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i3"
+                    android:id="@+id/v1item3"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i4"
+                    android:id="@+id/v1item4"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vendor2"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:onClick="openVendor">
+                <TextView
+                    android:tag="@string/vendor_tag"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place2"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p2i1"
+                    android:id="@+id/v2item1"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p2i2"
+                    android:id="@+id/v2item2"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p2i3"
+                    android:id="@+id/v2item3"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vendor3"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:onClick="openVendor">
+                <TextView
+                    android:tag="@string/vendor_tag"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place3"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p3i1"
+                    android:id="@+id/v3item1"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p3i2"
+                    android:id="@+id/v3item2"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p3i3"
+                    android:id="@+id/v3item3"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p3i4"
+                    android:id="@+id/v3item4"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vendor4"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:onClick="openVendor">
+                <TextView
+                    android:tag="@string/vendor_tag"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place4"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p4i1"
+                    android:id="@+id/v4item1"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@id/vendor1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:onClick="openVendor">
+                <TextView
+                    android:tag="@string/vendor_tag"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place1"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i1"
+                    android:id="@id/v1item1"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i2"
+                    android:id="@id/v1item2"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i3"
+                    android:id="@id/v1item3"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i4"
+                    android:id="@id/v1item4"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@id/vendor1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:onClick="openVendor">
+                <TextView
+                    android:tag="@string/vendor_tag"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place1"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i1"
+                    android:id="@id/v1item1"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i2"
+                    android:id="@id/v1item2"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i3"
+                    android:id="@id/v1item3"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i4"
+                    android:id="@id/v1item4"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@id/vendor1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:onClick="openVendor">
+                <TextView
+                    android:tag="@string/vendor_tag"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place1"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i1"
+                    android:id="@id/v1item1"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i2"
+                    android:id="@id/v1item2"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i3"
+                    android:id="@id/v1item3"
+                    android:layout_marginLeft="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/p1i4"
+                    android:id="@id/v1item4"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
