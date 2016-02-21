@@ -106,7 +106,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String query = "SELECT pass FROM " + TABLE_PERSON + " WHERE email = " + "'"+uname+"'";
         Cursor c = db.rawQuery(query, null);
         Log.d("lol", c.toString());
-        if (c == null) {
+        if (c.getCount() == 0) {
             //db.close();
             return "No such user";
         }
